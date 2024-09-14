@@ -29,18 +29,14 @@ async function UserOrLogin() {
           <SidebarToggle />
         </>
       ) : (
-        <Link href="/new" rel="nofollow">
-          <img className="size-6" src="/images/gemini.png" alt="gemini logo" />
-        </Link>
+       <div></div>
       )}
       <div className="flex items-center">
         <IconSeparator className="size-6 text-zinc-200" />
         {session?.user ? (
           <UserMenu user={session.user} />
         ) : (
-          <Button variant="link" asChild className="-ml-2">
-            <Link href="/login">Login</Link>
-          </Button>
+          <div></div>
         )}
       </div>
     </>
